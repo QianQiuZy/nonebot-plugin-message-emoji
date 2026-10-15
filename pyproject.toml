@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "nonebot-plugin-message-emoji"
+version = "0.1.0"
+description = "通过引用消息为其添加 QQ 表情回应"
+readme = "README.md"
+keywords = ["nonebot", "nonebot2", "plugin", "napcat", "qq", "emoji"]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<4.0"
+anyio = ">=4.0"
+nonebot2 = ">=2.3.0"
+nonebot-adapter-onebot = ">=2.0.0-beta.1"
+
+[tool.nonebot]
+plugins = ["nonebot_plugin_message_emoji"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = [
+    "F",
+    "E",
+    "W",
+    "I",
+    "UP",
+    "RUF",
+]
+ignore = [
+    "E402",
+    "UP006",
+    "UP035",
+    "UP037",
+    "RUF001",
+    "RUF002",
+    "RUF003",
+]

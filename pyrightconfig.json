@@ -1,0 +1,12 @@
+{
+  "include": ["nonebot_plugin_message_emoji"],
+  "typeCheckingMode": "all",
+  "pythonVersion": "3.10",
+  "venvPath": ".",
+  "venv": ".venv",
+  "extraPaths": [".venv/lib/python3.13/site-packages"],
+  "reportCallInDefaultInitializer": "none",
+  "reportUnknownVariableType": "none",
+  "reportUnknownMemberType": "none",
+  "reportUntypedFunctionDecorator": "none"
+}
